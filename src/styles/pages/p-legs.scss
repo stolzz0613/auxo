@@ -1,0 +1,40 @@
+.p-legs {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+
+    .ant-card-head {
+        padding: 0;
+    }
+    .ant-card-head-wrapper {
+        background: $blancoAuxo-3;
+    }
+    .ant-card-head-title {
+        padding: 18px 20px;
+
+        .ant-row {
+            align-items: center;
+            gap: 12px;
+        }
+    }
+    .ant-card-extra {
+        padding: 0px 20px;
+        a {
+            color: $azulAuxo-2;
+            text-decoration: none  !important;
+        }
+    }
+
+    &__departure {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        &--icon svg {
+            color: $blancoAuxo-3;
+            transform: rotate(90deg);
+        }
+    }
+}

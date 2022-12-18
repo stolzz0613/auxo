@@ -1,0 +1,50 @@
+.t-mainTemplate {
+    min-height: 100vh;
+
+    &__sideBar {
+        background-color: $blancoAuxo;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 30px 10px;
+        min-height: 95%;
+        padding: 50px;
+        border-right: 2px solid $azulAuxo-2;
+        width: 280px;
+
+        &--flex {
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+        }
+
+        .ant-menu {
+            background-color: $blancoAuxo;
+            border: none !important
+        }
+
+        .ant-menu-item {
+            background-color: $azulAuxo-3 !important;
+            color: $azulAuxo-2;
+
+            &:hover {
+                background-color: $azulAuxo-2 !important;
+                color: $azulAuxo-3;
+            }
+        }
+    }
+
+    &__header {
+        padding: 37px 112px;
+
+        &--container {
+            padding: 0 !important;
+            background: $blancoAuxo !important;
+        }
+    }
+
+    &__content {
+        margin-top: 60px;
+        min-height: 360px;
+    }
+}

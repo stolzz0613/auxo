@@ -1,0 +1,41 @@
+.a-table {
+    margin-top: 40px;
+    .ant-checkbox {
+        display: none;
+    }
+    table {
+        background-color: $blancoAuxo;
+        border-spacing: 0 11px !important;
+
+        .ant-table-cell{
+            color: $azulAuxo-1;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center !important;
+            background-color: #FFFFFF;
+            border-collapse: separate;
+            border-top: 1px solid $blancoAuxo-2 !important;
+            border-bottom: 1px solid $blancoAuxo-2 !important;
+            border-spacing: 0 5em !important;
+        }
+        .ant-table-cell:first-child {
+            border-left: 1px solid $blancoAuxo-2 !important;
+            border-radius: 8px 0 0 8px;
+        }
+        .ant-table-cell:last-child {
+            border-right: 1px solid $blancoAuxo-2 !important;
+            border-radius: 0 8px 8px 0;
+        }
+        .ant-table-cell-row-hover,
+        .ant-table-row-selected > td {
+            background: $verdeAuxo-2 !important;
+            color: #4F4F4F
+        };
+        .ant-table-thead {
+            .ant-table-cell,
+            .ant-table-cell:last-child {
+                border: none !important;
+            }
+        }
+    }
+}
