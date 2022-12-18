@@ -10,7 +10,7 @@ const initialState = {
 export const fetchItineraries = createAsyncThunk(
   'itineraries/fetchItineraries',
   async () => {
-    let response = await fetch('http://localhost:3010/itineraries')
+    let response = await fetch(`${import.meta.env.VITE_API_URL}/itineraries`)
       .then((response) => response.json())
     return response;
   }

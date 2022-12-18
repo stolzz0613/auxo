@@ -7,7 +7,7 @@ const initialState = {
 }
 
 export const fetchLegs = createAsyncThunk('legs/fetchLegs', async ({ value }) => {
-  let response = await fetch('http://localhost:3010/legs').then((response) =>
+  let response = await fetch(`${import.meta.env.VITE_API_URL}/legs`).then((response) =>
     response.json(),
   )
   return response.filter(r => r.id === value[0] || r.id === value[1])
